@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAIRLOY</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+    nav a {
+        font-family: karla;
+    }
+
+    #header {
+        margin-top: 125px;
+    }
+
+    #header h1 {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 58px;
+    }
+
+    #header p {
+        font-size: 18px;
+        font-family: karla;
+        color: rgba(120, 126, 131, 1);
+    }
+
+    #header img {
+        min-height: 180px;
+    }
+
+    #wwd h1 {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 36px;
+        color: rgba(49, 50, 51, 1);
+        text-align: center;
+    }
+
+    #about h1 {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 36px;
+        color: rgba(49, 50, 51, 1);
+        text-align: center;
+    }
+
+    #our_client h1 {
+        font-family: 'Montserrat';
+        font-size: 36px;
+        font-weight: 600;
+        color: rgba(49, 50, 51, 1);
+        text-align: center;
+    }
+
+    #our_client ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+
+    }
+
+    #our_client ul li {
+        float: left;
+    }
+
+    #our_client ul li a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        font-family: 'Karla';
+        font-weight: 400;
+        font-size: 18px;
+        color: #313233;
+        letter-spacing: -0.02em;
+
+    }
+
+    #our_client ul li a:focus {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 45px 0px #e3e3e6;
+        color: green;
+        text-decoration: none;
+        font-family: 'Karla';
+        font-size: 18px;
+        font-weight: bold;
+        color: #87c56d;
+        text-align: left;
+        letter-spacing: -0.02em;
+        border: 0cm;
+    }
+
+    #abtp {
+        font-family: 'Karla';
+        font-size: 16px;
+        color: #7c828f;
+        text-align: left;
+        letter-spacing: -0.03em;
+        line-height: 24px;
+    }
+
+    @media only screen and (min-width: 800px) {
+
+        #abtp {
+            padding: 100px;
+            padding-top: 220px;
+        }
+
+        #team {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        #abtp {
+            padding: 50px;
+        }
+    }
+
+    #unl {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        color: #87c56d;
+    }
+
+    .grid__item:hover {
+        box-shadow: 0px 0px 64px 0px #e9e9f2;
+        transition-delay: 0s !important;
+    }
+
+    .center-block {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #sub-wwd div b {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 16px;
+        color: rgba(49, 50, 51, 1);
+        letter-spacing: 0.06em;
+        line-height: 22px;
+    }
+
+    #sub-wwd div p {
+        font-family: 'Karla';
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(124, 130, 143, 1);
+        letter-spacing: -0.04em;
+        line-height: 21px;
+    }
+
+    #hiw {
+        background-color: #fafafe;
+    }
+
+    #hiw h1 {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 36px;
+        color: rgba(49, 50, 51, 1);
+        text-align: center;
+    }
+
+    #ot h1 {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 36px;
+        color: rgba(49, 50, 51, 1);
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light mt-3">
+        <a class="navbar-brand nav_logo mt-1 ml-5" href="#"><img src="images/logo.png" alt="" height="50px"
+                width="200px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" style="margin-left:20px;margin-right:20px;" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="margin-left:20px;margin-right:20px;" href="#">Partcipating clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="margin-left:20px;margin-right:20px;" href="#">For Business</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="margin-left:20px;margin-right:20px;" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn pl-4 pr-4 pt-2 pb-2"
+                        style="border: 2px solid #87c56d;border-radius: 8px;margin-left:20px;margin-right:20px;">Sign
+                        in</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn pl-4 pr-4 pt-2 pb-2"
+                        style="margin-left:20px;margin-right:70px;background:#87c56d;border-radius: 8px">Sign
+                        up</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="text-center" id="header">
+        <h1>Welcome to Fairloy</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices interdum mattis. Sed et </p>
+        <img src="images/hero-3x.png" alt="img" width="100%" height="auto" class="mt-0">
+    </div>
+    <div id="wwd">
+        <h1 style="margin-top:75px;">What we do</h1>
+        <div style="margin-top: -20px">
+            <p id="unl">___ _ __</p>
+        </div>
+        <div class="mt-5 container">
+            <div class="row" id="sub-wwd">
+                <div class="col-md-4 grid__item">
+                    <div class="thumbnail">
+                        <img src="images/Loyalty_Program-2x.png" alt="Loyalty Program" style="width:80%"
+                            class="center-block">
+                        <div class="caption text-center mt-2">
+                            <b>Loyalty Program</b><br><br>
+                            <p>Fairloy is the best loyalty program available in North America. It allows users to save
+                                money on each purchase at our participating Client Locations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 grid__item">
+                    <div class="thumbnail">
+                        <img src="images/grow-2x.png" alt="Help to Grow Business" style="width:80%"
+                            class="center-block">
+                        <div class="caption text-center mt-2">
+                            <b>Help to Grow Business</b><br><br>
+                            <P>One of the best platform for the businesses to provide Loyalty to its Customers.Fairloy
+                                is one card with multiple benefits, It provides business to offer different promotions
+                                and coupons other than loyalty. </P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 grid__item">
+                    <div class="thumbnail">
+                        <img src="images/Group_12-3x.png" alt="Great support" style="width:80%" class="center-block">
+                        <div class="caption text-center mt-2">
+                            <b>Great Support</b><br><br>
+                            <p>You can rely on us 24/7 for an exceptional customer service. We provide a great support
+                                for both our clients and users to enjoy the benefits provided on our platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h1 style="margin-top:75px;">About us</h1>
+        <div style="margin-top: -20px">
+            <p id="unl">___ _ __</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" id="abtp">
+                <p style="color: #7c828f">Fairloy Card provides the best and easiest way for
+                    the customers to see how much they saved on their
+                    purchases at our participating clients. Once you Sign Up on our portal you will see the dollars you
+                    saved on your previous purchase. <br><br> This loyalty Card is fair and transparent to our customers
+                    and
+                    you
+                    can see the exact dollar amount you saved instead of the complex points system. <br><br> SIGNING UP
+                    is FREE. <br><br>
+                    You will get a FREE FAIRLOY card once you <a href="#" style="color: #87c56d"><span></span>Sign
+                        Up</span></a> <br><br> Get your Money Back <br>
+                    Redeeming your Dollars is easy
+                    like never before.... <br> You can redeem your dollar amount at the very next purchase, you don’t
+                    have to
+                    wait to accumulate points to redeem your money.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Group_18-3x.png" alt="abt" width="100%" height="auto">
+            </div>
+        </div>
+    </div>
+    <div id="our_client">
+        <h1>Our client</h1>
+        <div style="margin-top: -20px">
+            <p id="unl">___ _ __</p>
+        </div>
+        <div class="container">
+            <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Information Technology</a></li>
+                <li><a href="#">Spa</a></li>
+                <li><a href="#">Massage</a></li>
+                <li><a href="#">Shopping</a></li>
+            </ul>
+        </div>
+        <div align="center">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1uIFq4pn_caFm_FOwfJ85NuP0eIemFt6Y" width="80%"
+                height="480"></iframe></div>
+    </div>
+    <div id="hiw"><br><br><br><br>
+        <h1>How it works</h1>
+        <div style="margin-top: -20px">
+            <p id="unl">___ _ __</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" id="abtp">
+                <p>Fairloy is one card which can be used at all participating client locations
+                    not just in one business location <br> The amount collected doesn't have a conversion rate, it
+                    represents
+                    the exact dollar amount available to the customer for use <br> Customers will see the exact dollar
+                    amount
+                    they save and can redeem at very next transaction at the same client location <br> Advanced
+                    dashboard
+                    with many features such as number of returning customers, in App information provides feedback
+                    directly to the business owner <br> Monthly customer Data Analytic Report (DAR) which will help you
+                    to
+                    analyze customer spending habits at your business <br> Our Loyalty card can be used as a Gift Card
+                    as
+                    well. Individuals also have the option to purchase gift cards for your location</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/Group_19-3x.png" alt="abt" width="100%" height="auto">
+            </div>
+        </div>
+    </div><br><br><br><br>
+    <div id="ot"><br><br><br><br>
+        <h1>Our team</h1>
+        <div style="margin-top: -20px">
+            <p id="unl">___ _ __</p>
+        </div>
+        <br><br>
+        <div id="team">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+</body>
+
+</html>
