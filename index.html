@@ -17,6 +17,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
@@ -127,17 +129,14 @@
             padding-top: 220px;
         }
 
-        #team {
-            margin-left: 100px;
-            margin-right: 100px;
-        }
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
 
         #abtp {
             padding: 50px;
         }
+
     }
 
     #unl {
@@ -195,11 +194,61 @@
         color: rgba(49, 50, 51, 1);
         text-align: center;
     }
+
+    .c-name {
+        font-family: 'Karla';
+        font-size: 22px;
+        color: #323743;
+        text-align: center;
+        letter-spacing: -0.02em;
+        line-height: 24px;
+    }
+
+    .c-style {
+        height: 405px;
+        width: 271px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 64px 0px #e4e4ef;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .c-img {
+        height: 250px;
+        width: 271px;
+    }
+
+    .c-style b {
+        font-family: 'Karla';
+        font-size: 22px;
+        color: #323743;
+        text-align: left;
+        letter-spacing: -0.02em;
+        line-height: 24px;
+    }
+
+    .c-style p {
+        font-family: 'Karla';
+        font-size: 16px;
+        color: #7c828f;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .c-style a {
+        letter-spacing: 20px;
+        color: #7c828f;
+    }
+
+    #whyFairloy {
+        background-color: #fafafe;
+    }
 </style>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light mt-3">
-        <a class="navbar-brand nav_logo mt-1 ml-5" href="#"><img src="images/logo.png" alt="" height="50px"
+        <a class="navbar-brand nav_logo mt-1 ml-5" href="#"><img src="images/logo-2x.png" alt="" height="50px"
                 width="200px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -221,7 +270,7 @@
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn pl-4 pr-4 pt-2 pb-2"
-                        style="border: 2px solid #87c56d;border-radius: 8px;margin-left:20px;margin-right:20px;">Sign
+                        style="border: 2px solid #87c56d;border-radius: 8px;margin-left:20px;margin-bottom:5px;margin-right:20px;">Sign
                         in</button>
                 </li>
                 <li class="nav-item">
@@ -353,30 +402,89 @@
                 <img src="images/Group_19-3x.png" alt="abt" width="100%" height="auto">
             </div>
         </div>
-    </div><br><br><br><br>
+    </div>
     <div id="ot"><br><br><br><br>
         <h1>Our team</h1>
         <div style="margin-top: -20px">
             <p id="unl">___ _ __</p>
         </div>
         <br><br>
-        <div id="team">
+        <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
+                    <div class="thumbnail c-style">
+                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
+                            alt="Img" style="width:100%" class="center-block c-img">
+                        <div class="caption text-center mt-2">
+                            <br>
+                            <b>Frank Dixon</b><br><br>
+                            <p>CEO</p><br>
+                            <a href=""><i class="fa fa-linkedin" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-instagram" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-twitter" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-facebook" style="font-size:19px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail c-style">
+                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
+                            alt="Img" style="width:100%" class="center-block c-img">
+                        <div class="caption text-center mt-2"> <br>
+                            <b>Frank Dixon</b><br><br>
+                            <p>CEO</p><br>
+                            <a href=""><i class="fa fa-linkedin" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-instagram" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-twitter" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-facebook" style="font-size:19px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail c-style">
+                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
+                            alt="Img" style="width:100%" class="center-block c-img">
+                        <div class="caption text-center mt-2"> <br>
+                            <b>Frank Dixon</b><br><br>
+                            <p>CEO</p><br>
+                            <a href=""><i class="fa fa-linkedin" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-instagram" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-twitter" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-facebook" style="font-size:19px"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail c-style">
+                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
+                            alt="Img" style="width:100%" class="center-block c-img">
+                        <div class="caption text-center mt-2"> <br>
+                            <b>Frank Dixon</b><br><br>
+                            <p>CEO</p><br>
+                            <a href=""><i class="fa fa-linkedin" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-instagram" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-twitter" style="font-size:19px"></i></a>
+                            <a href=""><i class="fa fa-facebook" style="font-size:19px"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br>
+    <br><br>
+    <div id="whyFairloy">
+        <br><br><br><br><br>
+        <div class="row">
+            <div class="col-md-6">
+                <a href=""><img src="images/vid.jpg" alt=""></a>
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
 </body>
 
 </html>
