@@ -13,7 +13,7 @@
   <script>
     // Define your locations: HTML content for the info window, latitude, longitude
     var locations = [
-      ['<h4>Baig Grills</h4>', -33.890542, 151.274856, 'https://static.wixstatic.com/media/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.png/v1/fill/w_389,h_133,al_c,q_80,usm_0.66_1.00_0.01/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.webp'],
+      ['<h4>Baig Grills</h4>', -33.890542, 151.274856, 'https://static.wixstatic.com/media/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.png/v1/fill/w_389,h_133,al_c,q_80,usm_0.66_1.00_0.01/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.webp','124 Kennedy Rd S Unit 2 Brampton, ON  L6W 3E7'],
       ['<h4>Coogee Beach</h4>', -33.923036, 151.259052, 'https://static.wixstatic.com/media/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.png/v1/fill/w_389,h_133,al_c,q_80,usm_0.66_1.00_0.01/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.webp'],
       ['<h4>Cronulla Beach</h4>', -34.028249, 151.157507, 'https://static.wixstatic.com/media/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.png/v1/fill/w_389,h_133,al_c,q_80,usm_0.66_1.00_0.01/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.webp'],
       ['<h4>Manly Beach</h4>', -33.80010128657071, 151.28747820854187, 'https://static.wixstatic.com/media/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.png/v1/fill/w_389,h_133,al_c,q_80,usm_0.66_1.00_0.01/8133d5_7002f42d11314c3e9678100fcd1818e0~mv2.webp'],
@@ -56,7 +56,7 @@
         return function () {
 
           var infowindow = new google.maps.InfoWindow({
-            content: "<img src='"+locations[i][3]+"' alt='img' /><br/><p>" + locations[i][0] + "</p>",
+            content: "<img src='"+locations[i][3]+"' alt='img' /><br/><p>" + locations[i][0] + "</p><br/><p>"+locations[i][4]+"</p>",
             maxWidth: 500
           });
 
