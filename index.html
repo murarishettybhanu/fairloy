@@ -6,28 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FAIRLOY</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 
-<body>
+<body onload="testimonial1()">
     <nav class="navbar navbar-expand-lg navbar-light mt-3">
-        <a class="navbar-brand nav_logo mt-1" id="logo" href="#"><img src="images/logo-2x.png" alt="" height="50px"
-                width="200px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand nav_logo mt-1" id="logo" href="#"><img src="images/logo-2x.png" alt="" height="50px" width="200px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -45,14 +37,12 @@
                     <a class="nav-link" style="margin-left:20px;margin-right:20px;" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn pl-4 pr-4 pt-2 pb-2"
-                        style="border: 2px solid #87c56d;border-radius: 8px;margin-left:20px;margin-bottom:5px;margin-right:20px;">Sign
-                        in</button>
+                    <a type="button" class="btn pl-4 pr-4 pt-2 pb-2" style="border: 2px solid #87c56d;border-radius: 8px;margin-left:20px;margin-bottom:5px;margin-right:20px;" data-toggle="modal" data-target="#signin">Sign
+                        in</a>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn pl-4 pr-4 pt-2 pb-2"
-                        style="margin-left:20px;margin-right:70px;background:#87c56d;border-radius: 8px">Sign
-                        up</button>
+                    <a type="button" class="btn pl-4 pr-4 pt-2 pb-2" style="margin-left:20px;margin-right:70px;background:#87c56d;border-radius: 8px" data-toggle="modal" data-target="#signup">Sign
+                        up</a>
                 </li>
             </ul>
         </div>
@@ -71,25 +61,20 @@
             <div class="row" id="sub-wwd">
                 <div class="col-md-4 grid__item">
                     <div class="thumbnail">
-                        <img src="images/Loyalty_Program-2x.png" alt="Loyalty Program" style="width:80%"
-                            class="center-block">
+                        <img src="images/Loyalty_Program-2x.png" alt="Loyalty Program" style="width:80%" class="center-block">
                         <div class="caption text-center mt-2">
                             <b>Loyalty Program</b><br><br>
-                            <p>Fairloy is the best loyalty program available in North America. It allows users to save
-                                money on each purchase at our participating Client Locations.
+                            <p>Fairloy is the best loyalty program available in North America. It allows users to save money on each purchase at our participating Client Locations.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 grid__item">
                     <div class="thumbnail">
-                        <img src="images/grow-2x.png" alt="Help to Grow Business" style="width:80%"
-                            class="center-block">
+                        <img src="images/grow-2x.png" alt="Help to Grow Business" style="width:80%" class="center-block">
                         <div class="caption text-center mt-2">
                             <b>Help to Grow Business</b><br><br>
-                            <P>One of the best platform for the businesses to provide Loyalty to its Customers.Fairloy
-                                is one card with multiple benefits, It provides business to offer different promotions
-                                and coupons other than loyalty. </P>
+                            <P>One of the best platform for the businesses to provide Loyalty to its Customers.Fairloy is one card with multiple benefits, It provides business to offer different promotions and coupons other than loyalty. </P>
                         </div>
                     </div>
                 </div>
@@ -98,8 +83,7 @@
                         <img src="images/Group_12-3x.png" alt="Great support" style="width:80%" class="center-block">
                         <div class="caption text-center mt-2">
                             <b>Great Support</b><br><br>
-                            <p>You can rely on us 24/7 for an exceptional customer service. We provide a great support
-                                for both our clients and users to enjoy the benefits provided on our platform.</p>
+                            <p>You can rely on us 24/7 for an exceptional customer service. We provide a great support for both our clients and users to enjoy the benefits provided on our platform.</p>
                         </div>
                     </div>
                 </div>
@@ -113,20 +97,9 @@
         </div>
         <div class="row">
             <div class="col-lg-6" id="abtp">
-                <p style="color: #7c828f">Fairloy Card provides the best and easiest way for
-                    the customers to see how much they saved on their
-                    purchases at our participating clients. Once you Sign Up on our portal you will see the dollars you
-                    saved on your previous purchase. <br><br> This loyalty Card is fair and transparent to our customers
-                    and
-                    you
-                    can see the exact dollar amount you saved instead of the complex points system. <br><br> SIGNING UP
-                    is FREE. <br><br>
-                    You will get a FREE FAIRLOY card once you <a href="#" style="color: #87c56d"><span></span>Sign
-                        Up</span></a> <br><br> Get your Money Back <br>
-                    Redeeming your Dollars is easy
-                    like never before.... <br> You can redeem your dollar amount at the very next purchase, you don’t
-                    have to
-                    wait to accumulate points to redeem your money.</p>
+                <p style="color: #7c828f">Fairloy Card provides the best and easiest way for the customers to see how much they saved on their purchases at our participating clients. Once you Sign Up on our portal you will see the dollars you saved on your previous purchase. <br><br>                    This loyalty Card is fair and transparent to our customers and you can see the exact dollar amount you saved instead of the complex points system. <br><br> SIGNING UP is FREE. <br><br> You will get a FREE FAIRLOY card once you <a href="#"
+                        style="color: #87c56d"><span></span>Sign
+                        Up</span></a> <br><br> Get your Money Back <br> Redeeming your Dollars is easy like never before.... <br> You can redeem your dollar amount at the very next purchase, you don’t have to wait to accumulate points to redeem your money.</p>
             </div>
             <div class="col-lg-6">
                 <img src="images/Group_18-3x.png" alt="abt" width="100%" height="auto">
@@ -150,8 +123,7 @@
             </ul>
         </div>
         <div align="center">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1uIFq4pn_caFm_FOwfJ85NuP0eIemFt6Y" width="80%"
-                height="480"></iframe></div>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1uIFq4pn_caFm_FOwfJ85NuP0eIemFt6Y" width="80%" height="480"></iframe></div>
     </div>
     <div id="hiw"><br><br><br><br>
         <h1>How it works</h1>
@@ -160,19 +132,10 @@
         </div>
         <div class="row">
             <div class="col-lg-6" id="abtp">
-                <p>Fairloy is one card which can be used at all participating client locations
-                    not just in one business location <br> The amount collected doesn't have a conversion rate, it
-                    represents
-                    the exact dollar amount available to the customer for use <br> Customers will see the exact dollar
-                    amount
-                    they save and can redeem at very next transaction at the same client location <br> Advanced
-                    dashboard
-                    with many features such as number of returning customers, in App information provides feedback
-                    directly to the business owner <br> Monthly customer Data Analytic Report (DAR) which will help you
-                    to
-                    analyze customer spending habits at your business <br> Our Loyalty card can be used as a Gift Card
-                    as
-                    well. Individuals also have the option to purchase gift cards for your location</p>
+                <p>Fairloy is one card which can be used at all participating client locations not just in one business location <br> The amount collected doesn't have a conversion rate, it represents the exact dollar amount available to the customer for
+                    use <br> Customers will see the exact dollar amount they save and can redeem at very next transaction at the same client location <br> Advanced dashboard with many features such as number of returning customers, in App information
+                    provides feedback directly to the business owner <br> Monthly customer Data Analytic Report (DAR) which will help you to analyze customer spending habits at your business <br> Our Loyalty card can be used as a Gift Card as well. Individuals
+                    also have the option to purchase gift cards for your location</p>
             </div>
             <div class="col-lg-6">
                 <img src="images/Group_19-3x.png" alt="abt" width="100%" height="auto">
@@ -189,8 +152,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="thumbnail c-style">
-                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
-                            alt="Img" style="width:100%" class="center-block c-img">
+                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg" alt="Img" style="width:100%" class="center-block c-img">
                         <div class="caption text-center mt-2">
                             <br>
                             <b>Frank Dixon</b><br><br>
@@ -204,8 +166,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="thumbnail c-style">
-                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
-                            alt="Img" style="width:100%" class="center-block c-img">
+                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg" alt="Img" style="width:100%" class="center-block c-img">
                         <div class="caption text-center mt-2"> <br>
                             <b>Frank Dixon</b><br><br>
                             <p>CEO</p>
@@ -218,8 +179,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="thumbnail c-style">
-                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
-                            alt="Img" style="width:100%" class="center-block c-img">
+                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg" alt="Img" style="width:100%" class="center-block c-img">
                         <div class="caption text-center mt-2"> <br>
                             <b>Frank Dixon</b><br><br>
                             <p>CEO</p>
@@ -232,8 +192,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="thumbnail c-style">
-                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
-                            alt="Img" style="width:100%" class="center-block c-img">
+                        <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg" alt="Img" style="width:100%" class="center-block c-img">
                         <div class="caption text-center mt-2"> <br>
                             <b>Frank Dixon</b><br><br>
                             <p>CEO</p>
@@ -250,7 +209,7 @@
     <br><br>
     <div id="whyFairloy">
         <br><br><br><br><br>
-        <div>
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <img src="images/vid.jpg" alt="" id="vid">
@@ -260,14 +219,9 @@
                         <p id="card_heading">Why Fairloy?</p>
                         <p id="card_par_1">Customers who earn more with your Business, spend more with your Business!”
                         </p>
-                        <p id="card_par_2">Fairloy is a New and user friendly platform for the businesses to provide
-                            loyalty for
-                            its
-                            customers. We
-                            are integrating the Information Technology and Data Technology to provide the best
-                            engagement
-                            results
-                            between a Business and Customer.</p>
+                        <p id="card_par_2">Fairloy is a New and user friendly platform for the businesses to provide loyalty for its customers. We are integrating the Information Technology and Data Technology to provide the best engagement results between a Business and
+                            Customer.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -279,28 +233,23 @@
         <div style="margin-top: -20px">
             <p id="unl">___ _ __</p>
         </div>
-        <div id="test">
+        <div id="test" class="container">
             <div class="row">
                 <div class="col-md-1">
-                    <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
-                        alt="" height="120px" width="120px" onclick="testimonial1()" id="t-img1" class="t-img-border">
-                    <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
-                        alt="" height="120px" width="120px" onclick="testimonial2()" id="t-img2">
-                    <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg"
-                        alt="" height="120px" width="120px" onclick="testimonial3()" id="t-img3">
+                    <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg" alt="" height="120px" width="120px" onclick="testimonial1()" id="t-img1" class="t-img-border">
+                    <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg" alt="" height="120px" width="120px" onclick="testimonial2()" id="t-img2">
+                    <img src="https://markschuelerphoto.com/wp-content/uploads/2012/01/NMC-headshots_blog_1D3_7714.jpg" alt="" height="120px" width="120px" onclick="testimonial3()" id="t-img3">
                 </div>
                 <div class="col-md-10" id="t-card">
                     <img src="images/left-quote-mark.png" alt="" id="quote"><br>
                     <p id="line">|</p>
                     <p id="t-name">Jonathan Nolan</p>
-                    <p id="t-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit
-                        ametpharetra erat. Ut iaculis, risus eu tincidunt blandit, risus est ullamcorper enim, a
-                        malesuada augue neque eu ligula. Curabitur facilisis porttitor scelerisque. Sed malesuada nunc
-                        quis diam placerat, id accumsan tortor ultricies. Pellentesque dui dui, luctus a volutpat non,
-                        lacinia quis magna. Morbi vestibulum pulvinar augue ac feugiat.</p>
+                    <p id="t-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit ametpharetra erat. Ut iaculis, risus eu tincidunt blandit, risus est ullamcorper enim, a malesuada augue neque eu ligula. Curabitur facilisis porttitor scelerisque.
+                        Sed malesuada nunc quis diam placerat, id accumsan tortor ultricies. Pellentesque dui dui, luctus a volutpat non, lacinia quis magna. Morbi vestibulum pulvinar augue ac feugiat.</p>
                 </div>
             </div>
         </div>
+        <br><br><br>
     </div>
 
     <br><br>
@@ -333,8 +282,8 @@
 
     <br><br><br>
     <div id="footer1">
-        <p>Want to start using Fairloy Card? Let's start!
-            &nbsp;&nbsp;<a href="" class="btn">Sign up</a>
+        <p>Want to start using Fairloy Card? Let's start! &nbsp;&nbsp;
+            <a href="" class="btn">Sign up</a>
         </p>
 
     </div>
@@ -365,8 +314,7 @@
                 <div class="col-md-5">
                     <h1>Newsletter</h1>
                     <p>Subscribe to our newsletter to get the latest News and offers.</p>
-                    <input type="text" placeholder="Email">
-                    <a href="" class="btn">Submit</a>
+                    <input type="text" placeholder="Email"> <a href="#" class="btn">Submit</a>
                 </div>
                 <div class="col-md-1" id="pc">
                     <a href=""> <i class="fa fa-facebook" style="font-size:28px"></i></a><br><br>
@@ -386,6 +334,202 @@
     <div id="footer3">
         <p>© Copyright Fairloy. All Rights Reserved.</p>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="signin" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="">
+                    <button type="button" class="close" data-dismiss="modal">&times;&nbsp;</button>
+                </div>
+                <div class="modal-body">
+                    <h4>
+                        Sign In
+                    </h4>
+                    <div class="container">
+                        <form action="">
+                            <br>
+                            <div id="con">
+                                <div class="inner-container">
+                                    <div class="toggle">
+                                        <p>Business</p>
+                                    </div>
+                                    <div class="toggle">
+                                        <p>
+                                            Customer
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="inner-container" id='toggle-container'>
+                                    <div class="toggle">
+                                        <p>Business</p>
+                                    </div>
+                                    <div class="toggle">
+                                        <p>
+                                            Customer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="material-icons md-24">
+                                            account_circle
+                                        </i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="material-icons md-24" id="key">
+                                            vpn_key
+                                        </i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="password">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="material-icons">
+                                            remove_red_eye
+                                        </i></span>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6" id="fp">
+                                    <a href="#">Forgot password?</a>
+                                </div>
+                                <div class="col-md-6" id="sn" align="right">
+                                    <a href="#" class="pl-4 pr-4 pt-2 pb-2">Sign In</a>
+                                </div>
+                            </div>
+                            <br><br><br>
+                            <div id="ftr">
+                                <p>Don’t have an account ?</p>
+                                <a href="">Register now</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="signup" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="">
+                    <button type="button" class="close" data-dismiss="modal">&times;&nbsp;</button>
+                </div>
+                <div class="modal-body">
+                    <h4>
+                        Sign Up
+                    </h4>
+                    <div class="container">
+                        <form action="">
+                            <br>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="material-icons md-24">
+                                            account_circle
+                                        </i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Phone number">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="material-icons md-24">
+                                            email
+                                        </i></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="material-icons md-24" id="key">
+                                            vpn_key
+                                        </i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="password">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="material-icons">
+                                            remove_red_eye
+                                        </i></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6" id="fp">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="material-icons md-24">
+                                                    person
+                                                </i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6" id="sn" align="right">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="material-icons md-24">
+                                                    person
+                                                </i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Last Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="col-auto my-1">
+                                    <div class="custom-control custom-checkbox mr-sm-2">
+                                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing" checked>
+                                        <label class="custom-control-label" for="customControlAutosizing">Do you already
+                                            <br>
+                                            have a Card?</label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="material-icons md-24">
+                                                    credit_card
+                                                </i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Enter Card Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="col-auto my-1">
+                                        <div class="custom-control custom-checkbox mr-sm-1">
+                                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing1">
+                                            <label class="custom-control-label" for="customControlAutosizing1">
+                                                I have read and agree to Cloud Wing Technologies <a href="">Terms and Conditions</a>,
+                                                as well as the <a href="">Privacy Policy</a>.
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6" align="right" id="sn">
+                                    <a href="#" class="pl-4 pr-4 pt-2 pb-2">Sign Up</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="ftr">
+                                <p>Already have an account ?</p>
+                                <a href="">Sign In</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     <script>
         function testimonial1() {
             document.getElementById("t-img1").classList.add("t-img-border");
@@ -393,21 +537,47 @@
             document.getElementById("t-img3").classList.remove("t-img-border");
             document.getElementById("t-name").innerHTML = "Jonathan Nolan";
             document.getElementById("t-content").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit ametpharetra erat. Ut iaculis, risus eu tincidunt blandit, risus est ullamcorper enim, a malesuada augue neque eu ligula. Curabitur facilisis porttitor scelerisque. Sed malesuada nunc quis diam placerat, id accumsan tortor ultricies. Pellentesque dui dui, luctus a volutpat non, lacinia quis magna. Morbi vestibulum pulvinar augue ac feugiat."
+            setTimeout(testimonial2, 20000);
         }
+
         function testimonial2() {
             document.getElementById("t-img2").classList.add("t-img-border");
             document.getElementById("t-img1").classList.remove("t-img-border");
             document.getElementById("t-img3").classList.remove("t-img-border");
             document.getElementById("t-name").innerHTML = "bhanu";
             document.getElementById("t-content").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit ametpharetra erat. Ut iaculis, risus eu tincidunt blandit, risus est ullamcorper enim, a malesuada augue neque eu ligula. Curabitur facilisis porttitor scelerisque. Sed malesuada nunc quis diam placerat, id accumsan tortor ultricies. Pellentesque dui dui, luctus a volutpat non, lacinia quis magna. Morbi vestibulum pulvinar augue ac feugiat."
+            setTimeout(testimonial3, 20000);
         }
+
         function testimonial3() {
             document.getElementById("t-img3").classList.add("t-img-border");
             document.getElementById("t-img1").classList.remove("t-img-border");
             document.getElementById("t-img2").classList.remove("t-img-border");
             document.getElementById("t-name").innerHTML = "teja";
-            document.getElementById("t-content").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit ametpharetra erat. Ut iaculis, risus eu tincidunt blandit, risus est ullamcorper enim, a malesuada augue neque eu ligula. Curabitur facilisis porttitor scelerisque. Sed malesuada nunc quis diam placerat, id accumsan tortor ultricies. Pellentesque dui dui, luctus a volutpat non, lacinia quis magna. Morbi vestibulum pulvinar augue ac feugiat."
+            document.getElementById("t-content").innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit ametpharetra erat. Ut iaculis, risus eu tincidunt blandit, risus est ullamcorper enim, a malesuada augue neque eu ligula. Curabitur facilisis porttitor scelerisque. Sed malesuada nunc quis diam placerat, id accumsan tortor ultricies. Pellentesque dui dui, luctus a volutpat non, lacinia quis magna. Morbi vestibulum pulvinar augue ac feugiat.";
+            setTimeout(testimonial1, 20000);
         }
+    </script>
+    <script>
+        var toggle = document.getElementById('con');
+        var toggleContainer = document.getElementById('toggle-container');
+        var toggleNumber;
+
+        toggle.addEventListener('click', function() {
+            toggleNumber = !toggleNumber;
+            if (toggleNumber) {
+                toggleContainer.style.clipPath = 'inset(0 0 0 50%)';
+                toggleContainer.style.backgroundColor = '#ffffff';
+                toggleContainer.style.color = '#87c56d';
+                toggleContainer.style.boxShadow = '0px 0px 45px 0px #e3e3e6';
+            } else {
+                toggleContainer.style.clipPath = 'inset(0 50% 0 0)';
+                toggleContainer.style.backgroundColor = '#ffffff';
+                toggleContainer.style.color = '#87c56d';
+                toggleContainer.style.boxShadow = '0px 0px 45px 0px #e3e3e6';
+
+            }
+        });
     </script>
 </body>
 
