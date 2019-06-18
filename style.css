@@ -419,7 +419,7 @@ nav a {
     border: 1px solid #a7abb6;
     border-radius: 10px;
     margin-top: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
  ::placeholder {
@@ -510,7 +510,7 @@ nav a {
     width: 255px;
     border: 1px solid #ffffff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 #footer2 .col-md-5 a {
@@ -676,4 +676,11 @@ nav a {
 
 .custom-control-label a {
     color: #87c56d
+}
+
+form::placeholder {
+    font-family: 'Karla';
+    font-size: 14px;
+    color: #5e6871;
+    text-align: inherit;
 }
